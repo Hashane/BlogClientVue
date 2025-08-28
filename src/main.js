@@ -1,27 +1,16 @@
 import './assets/main.css'
 import router from './routes'
-import { createApp } from 'vue'
+import { createApp, h, provide } from 'vue'
 import App from './App.vue'
+import { DefaultApolloClient } from '@vue/apollo-composable'
+import { apolloClient } from './apollo'
 
-import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core'
-import { createApolloProvider } from '@vue/apollo-option'
-
-// HTTP connection to the API
-const httpLink = createHttpLink({
-    uri: 'http://bloggraphql.test/graphiql',
+const app = createApp({
+    setup() {
+        // Provide Apollo client globally
+        provide(DefaultApolloClient, apolloClient)
+    },
+    render: () => h(App),
 })
 
-// Cache implementation
-const cache = new InMemoryCache()
-
-// Create the apollo client
-const apolloClient = new ApolloClient({
-    link: httpLink,
-    cache,
-})
-
-const apolloProvider = createApolloProvider({
-    defaultClient: apolloClient,
-})
-
-createApp(App).use(router).use(apolloProvider).mount('#app')
+app.use(router).mount('#app')

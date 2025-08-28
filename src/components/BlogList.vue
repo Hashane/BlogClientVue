@@ -7,7 +7,7 @@ const posts = [
     body: "The Composition API gives developers more flexibility and cleaner code structure...",
     author: "Jane Doe",
     date: "Aug 20, 2025",
-    image: "https://source.unsplash.com/600x400/?code,technology"
+    image: "https://picsum.photos/200/300"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const posts = [
     body: "Learn how to organize your Tailwind utility classes for scalable and maintainable projects...",
     author: "John Smith",
     date: "Aug 22, 2025",
-    image: "https://source.unsplash.com/600x400/?design,ui"
+    image: "https://picsum.photos/200/300"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const posts = [
     body: "Step-by-step guide on setting up Laravel with Docker, Nginx, and PostgreSQL...",
     author: "Alex Lee",
     date: "Aug 25, 2025",
-    image: "https://source.unsplash.com/600x400/?docker,server"
+    image: "https://picsum.photos/200/300"
   }
 ]
 </script>

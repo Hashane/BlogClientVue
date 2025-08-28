@@ -10,7 +10,7 @@ import ProductListing from '@/components/ProductListing.vue'
     <!-- Header -->
     <header class="bg-white shadow">
       <div class="w-full px-6 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-indigo-600">My Store</h1>
+        <h1 class="text-2xl font-bold text-black-600">My Blog</h1>
         <nav class="space-x-4 text-gray-700 font-medium">
           <a href="#" class="hover:text-indigo-600">Home</a>
           <a href="#" class="hover:text-indigo-600">Blog</a>
@@ -29,7 +29,7 @@ import ProductListing from '@/components/ProductListing.vue'
     <!-- Footer -->
     <footer class="bg-white shadow mt-auto">
       <div class="w-full px-6 py-4 text-center text-sm text-gray-500">
-        © 2025 My Store. All rights reserved.
+        © 2025 My Blog-Hashane. All rights reserved.
       </div>
     </footer>
 

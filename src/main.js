@@ -1,5 +1,5 @@
 import './assets/main.css'
-import router from './routes'
+import router from './router'
 import { createApp, h, provide } from 'vue'
 import App from './App.vue'
 import { DefaultApolloClient } from '@vue/apollo-composable'

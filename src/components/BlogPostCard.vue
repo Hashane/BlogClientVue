@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  post: []
+  post: Object
 })
 
 </script>
